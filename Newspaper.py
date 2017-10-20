@@ -1,4 +1,12 @@
 import newspaper
+
+cnn_paper=newspaper.build('http://cnn.com')
+for article in cnn_paper.articles:
+    print(article.url)
+for category in cnn_paper.category_urls():
+	print(category)
+
+
 import math
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
@@ -47,3 +55,4 @@ for line in f:
         print(line)
 
 f.close()
+
