@@ -3,7 +3,7 @@ import pandas as pd
 import os
 import sys
 import getopt
-import cPickle
+import _pickle as cPickle
 import csv
 import sklearn
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
